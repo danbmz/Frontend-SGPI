@@ -52,7 +52,7 @@ function LoginPage() {
                     <div className="w-15 h-15 rounded-lg text-3xl mx-auto mb-4 flex items-center justify-center bg-slate-800">
                         🏭
                     </div>
-                    <CardTitle className=" text-xl font-extrabold text-slate-700">Plásticos Juquila</CardTitle>
+                    <CardTitle className=" text-xl font-extrabold text-slate-700">Plásticos Juquila Demo</CardTitle>
                     <CardDescription className="text-xs font-medium">
                         Sistema de Gestión de Producción e Inventario
                     </CardDescription>
@@ -75,7 +75,7 @@ function LoginPage() {
                                     })}
                                     className="rounded-lg bg-slate-200"
                                 />
-                                {/* {error && <p className="text-xs text-red-500">{error}</p>} */}
+                                {error && <p className="text-xs text-red-500">{error}</p>}
                             </div>
                             <div className="grid gap-2">
                                 <Label htmlFor="password">CONTRASEÑA</Label>
@@ -96,6 +96,7 @@ function LoginPage() {
                             <Button type="submit" disabled={loading} className="w-full rounded-lg bg-slate-800 hover:bg-slate-700 cursor-pointer">
                             {loading ? 'Entrando...' : 'Iniciar sesión'}
                             </Button>
+                            <p className="text-muted-foreground text-center text-sm">usuario: admin01 - contraseña: Test1234!</p>
                         </div>
                     </form>
                 </CardContent>
